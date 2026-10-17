@@ -1,0 +1,14 @@
+footer {
+  background-color: var(--color-background-secondary);
+  padding: var(--spacing-xl);
+  text-align: center;
+}
+
+.footer__title {
+  font-size: var(--font-size-xl);
+}
+
+.footer__description {
+  padding: var(--spacing-md) 0;
+  font-size: var(--font-size-lg);
+}

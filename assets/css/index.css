@@ -1,0 +1,55 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main {
+  background-color: var(--color-background-primary);
+  color: var(--color-text-primary);
+  padding: var(--spacing-2xl);
+}
+
+.main__cardContainer {
+  background-color: var(--color-background-secondary);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+img {
+  /* SET Height TO AUTO ------------------------------------------------------- */
+  height: 20vh;
+  width: 30vw;
+  background-color: gray;
+}
+
+.features {
+  width: 400px;
+  max-width: 80%;
+  padding-bottom: var(--spacing-md);
+}
+
+.features__title {
+  text-align: center;
+}
+
+.list {
+  width: 100%;
+  max-width: 300px;
+  letter-spacing: 1px;
+}
+
+.list__item {
+  padding: var(--spacing-sm);
+  font-weight: 600;
+}
+
+.list__description {
+  text-align: center;
+}
