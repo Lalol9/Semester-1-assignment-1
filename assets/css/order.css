@@ -49,12 +49,17 @@ main {
 .order__fieldset {
   padding: var(--spacing-xs) var(--spacing-md) var(--spacing-sm);
   border: none;
-  border-top: 1px black;
+  border: 1px solid var(--color-background-tertiary);
+  border-radius: var(--radius-xs);
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   justify-content: space-around;
   gap: var(--spacing-sm);
+}
+
+.order__legend {
+  font-size: var(--font-size-lg);
 }
 
 .order__dateTime {
@@ -65,9 +70,6 @@ main {
 .order__title {
   text-align: center;
   font-size: var(--font-size-xl);
-}
-
-.order__input-group {
 }
 
 .order__label {
