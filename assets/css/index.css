@@ -53,3 +53,9 @@ img {
 .list__description {
   text-align: center;
 }
+
+.price {
+  text-align: center;
+  padding: var(--spacing-md) 0;
+  font-size: var(--font-size-xl);
+}

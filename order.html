@@ -16,8 +16,8 @@
       <h1 class="header__title">Really awesome product!</h1>
 
       <nav class="header__nav">
-        <a href="./index.html">Home</a>
-        <a href="./order.html">Order Now</a>
+        <a class="header__link" href="./index.html">Home</a>
+        <a class="header__link" href="./order.html">Order Now</a>
       </nav>
     </header>
 
@@ -25,24 +25,86 @@
       <div class="main__cardContainer">
         <form class="order">
           <h2 class="order__title">Order information</h2>
-          <ul>
-            <li class="names">
-              <label class="order__label" for="">First Name</label>
-              <input class="order__input" type="text" />
-              <label class="order__label" for="">Last Name</label>
-              <input class="order__input" type="text" />
-            </li>
-            <li class="">
-              <label class="order__label" for="">Phone Number</label>
-              <input class="order__input" type="text" />
-              <label class="order__label" for="">Email</label>
-              <input class="order__input" type="text" />
-            </li>
-            <li class="">
-              <label class="order__label" for="">Quantity</label>
-              <input class="order__input" type="text" />
-            </li>
-          </ol>
+          <!-- Personalia ------------------------------------------------ -->
+          <fieldset class="order__fieldset order__personalia">
+            <legend>Personalia</legend>
+            <div class="order__input-group">
+              <label class="order__label" for="firstName">First Name</label>
+              <input
+                class="order__input"
+                id="firstName"
+                required
+                type="text"
+                minlength="1"
+                maxlength="50"
+                placeholder="e.g. John"
+              />
+            </div>
+            <div class="order__input-group">
+              <label class="order__label" for="lastName">Last Name</label>
+              <input
+                class="order__input"
+                id="lastName"
+                required
+                type="text"
+                placeholder="e.g Smith"
+              />
+            </div>
+            <div class="order__input-group">
+              <label class="order__label" for="phone">Phone Number</label>
+              <input
+                class="order__input"
+                id="phone"
+                required
+                type="tel"
+                placeholder="e.g. 12345678"
+                pattern="[0-9]{8}"
+                required
+              />
+            </div>
+            <div class="order__input-group">
+              <label class="order__label" for="email">Email</label>
+              <input
+                class="order__input"
+                id="email"
+                required
+                type="email"
+                placeholder="e.g. john@smith.com"
+              />
+            </div>
+          </fieldset>
+          <!-- Date and time --------------------------------------------------- -->
+          <fieldset class="order__fieldset order__dateTime">
+            <legend>Time and date</legend>
+            <div class="order__input-group">
+              <label class="order__label" for="bookingDate">Booking Date</label>
+              <input
+                class="order__input"
+                id="bookingDate"
+                required
+                type="date"
+                min="2026-10-20"
+              />
+            </div>
+            <div class="order__input-group">
+              <label class="order__label" for="bookingTime">Booking Time</label>
+              <input
+                class="order__input"
+                id="bookingTime"
+                type="time"
+                required
+                min="10:00"
+                max="23:00"
+              />
+            </div>
+          </fieldset>
+          <div class="terms">
+            <p class="terms">
+              I have read and agree to the <a href="#">terms</a> and
+              <a href="#">conditions</a>.
+            </p>
+            <input class="terms__check" type="checkbox" required />
+          </div>
           <button class="order__button" type="submit">Order Now!</button>
         </form>
       </div>

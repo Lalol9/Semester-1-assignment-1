@@ -29,7 +29,7 @@ header {
   gap: var(--spacing-md);
 }
 
-a {
+.header__link {
   background-color: var(--color-button);
   color: var(--color-text-secondary);
   height: 40px;
@@ -40,7 +40,7 @@ a {
   align-items: center;
 }
 
-a:hover {
+.header__link:hover {
   background-color: black;
   transition-duration: 0.3s;
 }
