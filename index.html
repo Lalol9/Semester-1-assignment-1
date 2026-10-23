@@ -30,8 +30,8 @@
     <!-- Main content ------------------------------ -->
     <main>
       <div class="card">
+        <!-- image of product -->
         <div class="card__image">
-          <!-- image of product -->
           <img
             class="product_picture"
             src="./assets/img/pexels-pavel-danilyuk-6764261.jpg"
@@ -40,6 +40,19 @@
         </div>
         <div class="card__content">
           <h2 class="card__header">Gray Paint</h2>
+          <div class="card__image-hidden">
+            <!-- hidden image of product -->
+            <img
+              class="product_picture-hidden picture_left"
+              src="./assets/img/pexels-pavel-danilyuk-6764261.jpg"
+              alt="Image of gray wall being painted"
+            />
+            <img
+              class="product_picture-hidden picture_right"
+              src="./assets/img/pexels-pavel-danilyuk-6764241.jpg"
+              alt="Image of gray wall being painted"
+            />
+          </div>
           <p class="card__description">
             Introducing: Gray paint! <br />
             A paint for any occation. Whether you are painting your livingroom,
@@ -51,7 +64,7 @@
             grayest shades of gray ever.
           </p>
 
-          <!-- list -->
+          <!-- Features --------------------- -->
           <div class="features">
             <h3 class="features__title">Features:</h3>
             <ul class="features__list">
@@ -63,8 +76,8 @@
             </ul>
           </div>
           <div class="card__price">
-            <p class="priceText">Price: <br /></p>
-            <p class="priceAmount">50$ for a 5 litre can.</p>
+            <h3 class="price_text">Price: <br /></h3>
+            <p class="price_amount">50$ for a 5 litre can.</p>
           </div>
           <a class="card__button" href="./order.html">Order Now!</a>
         </div>

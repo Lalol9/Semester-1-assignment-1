@@ -13,7 +13,6 @@ main {
   background-color: var(--color-background-primary);
   color: var(--color-text-primary);
   padding: var(--spacing-2xl);
-  /* flex-grow: 1; */
 
   display: flex;
   flex-direction: column;
@@ -64,7 +63,6 @@ main {
 
 .order__dateTime {
   flex-grow: 0.5;
-  /* padding: var(--spacing-md); */
 }
 
 .order__title {
@@ -89,23 +87,19 @@ main {
 }
 
 .city {
-  /* display: inline; */
   width: 100%;
 }
 
-.postCode {
-  /* display: inline; */
+.post_code {
   width: 170px;
 }
 
 .color {
-  /* display: inline; */
   width: 100%;
   max-width: 150px;
 }
 
 .quantity {
-  /* display: inline; */
   width: 75px;
 }
 
