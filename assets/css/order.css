@@ -8,7 +8,7 @@ body {
 
 main {
   height: 100%;
-  min-height: 800px;
+  min-height: 1000px;
   width: 100%;
   background-color: var(--color-background-primary);
   color: var(--color-text-primary);
@@ -80,6 +80,33 @@ main {
   display: inline;
   width: 100%;
   padding: var(--spacing-xs);
+}
+
+.order__input-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--spacing-md);
+}
+
+.city {
+  /* display: inline; */
+  width: 100%;
+}
+
+.postCode {
+  /* display: inline; */
+  width: 170px;
+}
+
+.color {
+  /* display: inline; */
+  width: 100%;
+  max-width: 150px;
+}
+
+.quantity {
+  /* display: inline; */
+  width: 75px;
 }
 
 .terms {
