@@ -7,55 +7,98 @@ body {
 }
 
 main {
+  height: 100%;
+  min-height: 800px;
+  width: 100%;
   background-color: var(--color-background-primary);
   color: var(--color-text-primary);
   padding: var(--spacing-2xl);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.main__cardContainer {
+.card {
   background-color: var(--color-background-secondary);
-  padding: var(--spacing-md);
   border-radius: var(--radius-md);
+  padding: var(--spacing-2xl);
+
+  width: 900px;
+  height: 600px;
+
   display: flex;
-  flex-direction: column;
+  gap: var(--spacing-2xl);
+  justify-content: space-between;
   align-items: center;
-  gap: var(--spacing-md);
+}
+
+.card__image {
+  width: 350px;
+  height: 100%;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 img {
-  /* SET Height TO AUTO ------------------------------------------------------- */
-  height: 20vh;
-  width: 30vw;
-  background-color: gray;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: var(--radius-xs);
 }
 
-.features {
-  width: 400px;
-  max-width: 80%;
-  padding-bottom: var(--spacing-md);
+.card__content {
+  width: 350px;
+  height: 100%;
+  flex-grow: 1;
+
+  /* padding: var(--spacing-sm); */
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  /* justify-content: space-between; */
 }
 
-.features__title {
-  text-align: center;
+.card__header {
+  font-size: var(--font-size-xl);
 }
 
-.list {
-  width: 100%;
-  max-width: 300px;
+.card__description {
   letter-spacing: 1px;
 }
 
+.features {
+}
+
+.features__title {
+}
+
+.features__list {
+  list-style: square;
+}
+
 .list__item {
+  padding: var(--spacing-2xs);
+}
+
+.card__price {
+  font-size: var(--font-size-lg);
+}
+
+.card__button {
+  background-color: var(--color-button);
+  color: var(--color-text-secondary);
+  border-radius: var(--radius-2xs);
+  width: 100%;
+
+  text-align: center;
   padding: var(--spacing-sm);
-  font-weight: 600;
 }
 
-.list__description {
-  text-align: center;
-}
-
-.price {
-  text-align: center;
-  padding: var(--spacing-md) 0;
-  font-size: var(--font-size-xl);
+.card__button:hover {
+  background-color: black;
+  transition-duration: 0.3s;
 }

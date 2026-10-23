@@ -3,61 +3,70 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/variables.css" />
     <link rel="stylesheet" href="./assets/css/header.css" />
     <link rel="stylesheet" href="./assets/css/footer.css" />
     <link rel="stylesheet" href="./assets/css/index.css" />
-    <title>Document</title>
+    <title>Boring Paint</title>
   </head>
   <body>
     <!-- header ------------------------------------- -->
     <header>
-      <h1 class="header__title">Really awesome product!</h1>
+      <h1 class="header__title">Boring Paint LLC</h1>
 
       <nav class="header__nav">
         <a class="header__link" href="./index.html">Home</a>
-        <a class="header__link" href="./order.html">Order Now</a>
+        <a class="header__link" href="./order.html">Order Paint</a>
       </nav>
     </header>
 
     <!-- Main content ------------------------------ -->
     <main>
-      <div class="main__cardContainer">
-        <h2>What is product?</h2>
-        <p>
-          Product is something something figure out waht you wanna sell dummy
-        </p>
+      <div class="card">
+        <div class="card__image">
+          <!-- image of product -->
+          <img
+            class="product_picture"
+            src="./assets/img/pexels-pavel-danilyuk-6764261.jpg"
+            alt="Image of gray wall being painted"
+          />
+        </div>
+        <div class="card__content">
+          <h2 class="card__header">Gray Paint</h2>
+          <p class="card__description">
+            Introducing: Gray paint! <br />
+            A paint for any occation. Whether you are painting your livingroom,
+            your car, your bicycle, or even your boat. Gray is never the wrong
+            color. <br />
+            <br />
+            Our higly skilled team of color blenders have been mixing white and
+            black paint together for decades and have come up with one of the
+            grayest shades of gray ever.
+          </p>
 
-        <!-- image of product -->
-        <img class="product_picture" src="" alt="Image of product" />
-
-        <!-- list -->
-        <div class="features">
-          <h3 class="features__title">Features</h3>
-          <dl class="features__list">
-            <dt class="list__item">Thing about product</dt>
-            <dd class="list__description">
-              Descriptive description about product
-            </dd>
-            <dt class="list__item">Thing about product</dt>
-            <dd class="list__description">
-              Descriptive description about product
-            </dd>
-            <dt class="list__item">Thing about product</dt>
-            <dd class="list__description">
-              Descriptive description about product
-            </dd>
-            <dt class="list__item">Thing about product</dt>
-            <dd class="list__description">
-              Descriptive description about product
-            </dd>
-            <dt class="list__item">Thing about product</dt>
-            <dd class="list__description">
-              Descriptive description about product
-            </dd>
-          </dl>
-          <p class="price">Price: 112312$</p>
+          <!-- list -->
+          <div class="features">
+            <h3 class="features__title">Features:</h3>
+            <ul class="features__list">
+              <li class="list__item">Gray</li>
+              <li class="list__item">"Goopy"</li>
+              <li class="list__item">Asbestos free</li>
+              <li class="list__item">Fire retardant</li>
+              <li class="list__item">Cherry flavoured?</li>
+            </ul>
+          </div>
+          <div class="card__price">
+            <p class="priceText">Price: <br /></p>
+            <p class="priceAmount">50$ for a 5 litre can.</p>
+          </div>
+          <a class="card__button" href="./order.html">Order Now!</a>
         </div>
       </div>
     </main>
@@ -67,8 +76,8 @@
       <h3 class="footer__title">This is a student project!</h3>
       <p class="footer__description">
         All products on this page no matter how desirable are not real and
-        cannot be purchased or ordered. This page exists purely as a student
-        project and isn't affilliated with any brand or company.
+        cannot be purchased or ordered. This page exists purely for educational
+        purposes and isn't affilliated with any brand or company.
       </p>
     </footer>
   </body>
