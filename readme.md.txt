@@ -7,4 +7,7 @@ The images are from pexels.com and were taken by Pavel Danilyuk.
 Github link:
 https://github.com/Lalol9/Semester-1-assignment-1
 
+Deployment link:
+https://semester-1-assignment-1.netlify.app
+
 This is a student project created for educational purposes and is not an official or affiliated website.
