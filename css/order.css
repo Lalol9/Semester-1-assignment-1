@@ -115,6 +115,7 @@ main {
 
 .terms__check {
   display: inline;
+  cursor: pointer;
 }
 
 .order__button {
@@ -131,4 +132,17 @@ main {
 .order__button:hover {
   background-color: var(--color-button-hover);
   transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  main {
+    padding: 0;
+  }
+  .card {
+    padding: var(--spacing-2xs);
+  }
+  .order {
+    gap: var(--spacing-xs);
+  }
 }
